@@ -15,9 +15,8 @@ Project is created with:
 ## Features
 #####Arrays: 
 - loops: 
-    - first task -
-a small program calculating the factorial, made in two different ways.
-    - secound task -
+    - first task - a small program calculating the factorial, made in two different ways.
+    - secound task - program that sums all given numbers in the range from x to y.
 
 	
 ## Setup

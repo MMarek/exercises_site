@@ -1,12 +1,14 @@
 import React, {Component} from "react";
-import Loops from './Loops/Loops'
+import Loops01 from './Loops/Loops01'
+import Loops02 from './Loops/Loops02'
 
 class Home extends Component {
 
     render() {
         return (
             <>
-              <Loops/>
+              <Loops01/>
+              <Loops02/>
             </>
         )
     }
