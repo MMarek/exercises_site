@@ -2,7 +2,9 @@ import React, {Component} from "react";
 import '../../../scss/_loops.scss'
 
 class Square extends Component {
+
     render() {
+
         let n = 5;
         let result1 = 1;
         for (let i = 1; i <= n; i++) {
@@ -20,9 +22,9 @@ class Square extends Component {
                 <div className='squareFor'>
                     Śilnia liczby {n} wynosi {result1} - wykonane pętlą for
                 </div>
-                <div className='squareWhile'>
+                <button className='squareWhile'>
                     Śilnia liczby {n} wynosi {result2} - wykonane pętlą while
-                </div>
+                </button>
             </section>
         )
     }
