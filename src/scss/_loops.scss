@@ -1,0 +1,39 @@
+.loops {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+
+  .squareFor {
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 3px 2px black;
+    font-variant: small-caps;
+    width: 50%;
+    color: #ffffff;
+    background-color: #868686;
+    border: groove;
+    border-radius: 60px;
+    margin: 10px;
+    padding: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .squareWhile {
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 3px 2px black;
+    font-variant: small-caps;
+    width: 50%;
+    color: #ffffff;
+    background-color: #868686;
+    border: groove;
+    border-radius: 60px;
+    margin: 10px;
+    padding: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}

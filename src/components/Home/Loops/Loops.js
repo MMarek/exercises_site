@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import '../../../scss/_loops.scss'
 
 class Square extends Component {
     render() {
@@ -15,14 +16,14 @@ class Square extends Component {
             j++;
         }
         return (
-            <>
-                <div className='square'>
+            <section className='loops'>
+                <div className='squareFor'>
                     Śilnia liczby {n} wynosi {result1} - wykonane pętlą for
                 </div>
-                <div className='square'>
+                <div className='squareWhile'>
                     Śilnia liczby {n} wynosi {result2} - wykonane pętlą while
                 </div>
-            </>
+            </section>
         )
     }
 }
