@@ -5,7 +5,7 @@ import {
     Route,
 } from 'react-router-dom';
 
-import Home from "./components/home"
+import Home from "./components/Home/Home"
 
 function App() {
     return (
