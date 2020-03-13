@@ -17,7 +17,8 @@ Project is created with:
 - loops: 
     - first task - a small program calculating the factorial, made in two different ways.
     - secound task - program that sums all given numbers in the range from x to y.
-
+    - third task - alternating `'+' and '-' `program with loop in a loop, and after all iterations the program 
+    starts from a new line.
 	
 ## Setup
 To clone and run this application, you'll need Git and React installed on your computer:

@@ -12,7 +12,7 @@ class SumOfAll extends Component {
         for (let i = x; i <= y; i = i + 1) {
             sum += i;
         }
-        console.log(sum);
+        // console.log(sum);
         return (
             <div className='sumOfAll'>
                 Suma wszystkich dodanych do siebie liczb w przedziale od 1 do 100 daje wynik: {sum} :)
