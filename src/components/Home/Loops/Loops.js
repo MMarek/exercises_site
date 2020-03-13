@@ -22,9 +22,12 @@ class Square extends Component {
                 <div className='squareFor'>
                     Śilnia liczby {n} wynosi {result1} - wykonane pętlą for
                 </div>
-                <button className='squareWhile'>
+
+                <h4> Zapraszam do prześledzenia kodu :) </h4>
+
+                <div className='squareWhile'>
                     Śilnia liczby {n} wynosi {result2} - wykonane pętlą while
-                </button>
+                </div>
             </section>
         )
     }

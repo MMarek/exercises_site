@@ -14,8 +14,10 @@ Project is created with:
 
 ## Features
 #####Arrays: 
-- task1 -
-
+- loops: 
+    - first task -
+a small program calculating the factorial, made in two different ways.
+    - secound task -
 
 	
 ## Setup
