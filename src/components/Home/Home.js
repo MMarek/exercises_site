@@ -8,7 +8,7 @@ class Home extends Component {
 
     render() {
         return (
-            <section className='test'>
+            <section className='home'>
               <Loops01/>
               <Loops02/>
               <Loops03/>

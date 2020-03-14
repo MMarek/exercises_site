@@ -36,8 +36,6 @@ class Number extends Component {
             arr.push(random)
         }
 
-        console.log(arr);
-
         let duplicatedValues = [];
 
         for (let i = 0; i < arr.length; i++) {
