@@ -3,7 +3,32 @@ import '../../../scss/_loops.scss'
 
 class Stars extends Component {
 
+    state = {
+        click: false
+    };
+
+    handleButtonOneClick = () => {
+        this.setState({
+            click: this.state.click ? false : true
+        })
+    };
+
     render() {
+
+        const {click} = this.state;
+
+        let styleOne = {
+            width: click ? '30%' : '10%',
+            height: click ? '45%' : '10%',
+            fontSize: click ? '15px' : '0%',
+            transition: '2s',
+        };
+
+        let styleTwo = {
+            fontSize: click ? '0%' : '70px',
+            transition: '5s',
+        };
+
         let k = 15;
 
         let textResult = "";
@@ -20,12 +45,18 @@ class Stars extends Component {
 
         // console.log(textResult);
         return (
-                <div className='stars'>
-                    <h5>Program zamieszczający naprzemiennie '+' oraz '-', posiadający pętle w pętli:</h5>
+            <section className='stars' style={styleOne}
+            onClick={this.handleButtonOneClick}>
+                <div className='numberOfExercise' style={styleTwo} onClick={this.handleButtonOneClick}>3.</div>
+                <div className='allStars'>
+                    <h4>Program zamieszczający naprzemiennie '+' oraz '-', posiadający pętle w pętli:</h4>
 
                     {textResult}
-                </div>
 
+                    <p>{'let k = 15; let textResult = ""; for (let i = 0; i < k; i++) {for (let j = 0; j < k; j++) ' +
+                    '{if ((i + j) % 2 === 0) {textResult += "-";} else {textResult += "+";}}}'}</p>
+                </div>
+            </section>
         )
     }
 }

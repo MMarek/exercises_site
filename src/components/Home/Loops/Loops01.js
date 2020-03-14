@@ -4,29 +4,29 @@ import '../../../scss/_loops.scss'
 class Square extends Component {
 
     state = {
-        one: false
+        click: false
     };
 
     handleButtonOneClick = () => {
         this.setState({
-            one: this.state.one ? false : true
+            click: this.state.click ? false : true
         })
     };
 
     render() {
 
-        const {one} = this.state;
+        const {click} = this.state;
 
         let styleOne = {
-            width: one ? '30%' : '10%',
-            height: one ? '45%' : '10%',
-            fontSize: one ? '15px' : '0%',
+            width: click ? '30%' : '10%',
+            height: click ? '45%' : '10%',
+            fontSize: click ? '15px' : '0%',
             transition: '2s',
         };
 
         let styleTwo = {
-            fontSize: one ? '0%' : '70px',
-            transition: '2s',
+            fontSize: click ? '0%' : '70px',
+            transition: '5s',
         };
 
         let n = 5;
