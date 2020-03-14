@@ -49,7 +49,23 @@ class EvenNumber extends Component {
                 <div className='numberOfExercise' style={styleTwo} onClick={this.handleButtonOneClick}>6.</div>
 
                 <div className='evenNumberDiv'>
-                    {randomNumbers}
+                   Losowe liczby z zakresu od 1 do 10, wygenerowane przy pomocy `Math.random()`,
+                    a każda nieparzysta w niej, zamieniona zostaje w parzystą o wartość do góry.
+                    <p>Oto one: {randomNumbers}</p>
+                </div>
+                <div className='evenNumberDiv'>
+                    {'let randomNumbers = [];\n' +
+                    '\n' +
+                    '        for (let i = 0; i < 10; i++) {\n' +
+                    '            let random = Math.floor(Math.random() * 29 + 1);\n' +
+                    '            randomNumbers.push(random)\n' +
+                    '        }\n' +
+                    '\n' +
+                    '        for (let i = 0; i < randomNumbers.length; i++) {\n' +
+                    '            if (randomNumbers[i] % 2 !== 0) {\n' +
+                    '                randomNumbers[i] +=1;\n' +
+                    '            }\n' +
+                    '        }'}
                 </div>
             </section>
         )

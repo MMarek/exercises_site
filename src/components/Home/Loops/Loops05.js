@@ -44,6 +44,15 @@ class Arithmetic extends Component{
                 <div className='arithmeticAverage'>
                     Suma liczb: [2,5,17,53,89,146,271,330,751] podzielona przez ich ilość daje średnią arytmetyczną: {avg}
                 </div>
+                <div className='arithmeticAverage'>
+                    {'const numbers = [2,5,17,53,89,146,271,330,751];\n' +
+                    '\n' +
+                    '        let sum1 = 0;\n' +
+                    '        for (let i = 0; i < numbers.length; i++) {\n' +
+                    '            sum1 += numbers[i];\n' +
+                    '        }\n' +
+                    '        let avg = sum1 / numbers.length;'}
+                </div>
             </section>
         )
 
