@@ -42,7 +42,7 @@ class Arithmetic extends Component{
             onClick={this.handleButtonOneClick}>
                 <div className='numberOfExercise' style={styleTwo} onClick={this.handleButtonOneClick}>5.</div>
                 <div className='arithmeticAverage'>
-                    Suma liczb: {numbers} podzielona przez ich ilość daje średnią arytmetyczną: {avg}
+                    Suma liczb: [2,5,17,53,89,146,271,330,751] podzielona przez ich ilość daje średnią arytmetyczną: {avg}
                 </div>
             </section>
         )
