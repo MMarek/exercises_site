@@ -30,6 +30,10 @@ and its content will be displayed.
     - 4 - table with random numbers with 15 places inside, from 1 to 10 
     (each refresh of the page gives a new set of numbers).	
     Then the loop in the loop calculates how many numbers from the result are repeated.
+    - 5 - array with various numbers, and the arithmetic average of them.
+ 
+    
+    
 ## Setup
 To clone and run this application, you'll need Git and React installed on your computer:
 ```
