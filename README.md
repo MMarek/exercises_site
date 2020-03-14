@@ -31,6 +31,8 @@ and its content will be displayed.
     (each refresh of the page gives a new set of numbers).	
     Then the loop in the loop calculates how many numbers from the result are repeated.
     - 5 - array with various numbers, and the arithmetic average of them.
+    - 6 - an array with 10 randomly generated numbers using Math.random (). 
+    Each odd number converted to an even number one higher.
  
     
     
