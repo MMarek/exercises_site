@@ -25,11 +25,8 @@ class Square extends Component {
         };
 
         let styleTwo = {
-            // width: one ? '300px' : '100px',
-            // height: one ? '350px' : '100px',
             fontSize: one ? '0%' : '70px',
             transition: '2s',
-            // padding: '0px'
         };
 
         let n = 5;
@@ -48,7 +45,7 @@ class Square extends Component {
             <section className='loops' style={styleOne}
                      onClick={this.handleButtonOneClick}
             >
-                <div className='div1' style={styleTwo} onClick={this.handleButtonOneClick}>1.</div>
+                <div className='numberOfExercise' style={styleTwo} onClick={this.handleButtonOneClick}>1.</div>
                 <div className='squareFor'>
                     Śilnia liczby {n} wynosi {result1} - wykonane pętlą for:
                     <p>
