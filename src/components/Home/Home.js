@@ -7,11 +7,11 @@ class Home extends Component {
 
     render() {
         return (
-            <>
+            <section className='test'>
               <Loops01/>
               <Loops02/>
               <Loops03/>
-            </>
+            </section>
         )
     }
 }

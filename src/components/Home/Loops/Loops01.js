@@ -4,33 +4,32 @@ import '../../../scss/_loops.scss'
 class Square extends Component {
 
     state = {
-        open: true,
         one: false
-    }
-
-    handleButtonOneOn = () => {
-        this.setState({one: true});
-        console.log('najazd');
-    };
-
-    handleButtonOneOff = () => {
-        this.setState({one: false});
-        console.log('zjazd');
     };
 
     handleButtonOneClick = () => {
-        console.log('klik');
+        this.setState({
+            one: this.state.one ? false : true
+        })
     };
 
     render() {
 
-        const {open} = this.state;
-        let show = open ? null : 'hide';
         const {one} = this.state;
 
         let styleOne = {
-            fontSize: one ? '100px' : '20px',
-            transition: '5s',
+            width: one ? '300px' : '100px',
+            height: one ? '350px' : '100px',
+            fontSize: one ? '15px' : '0%',
+            transition: '2s',
+        };
+
+        let styleTwo = {
+            // width: one ? '300px' : '100px',
+            // height: one ? '350px' : '100px',
+            fontSize: one ? '0%' : '70px',
+            transition: '2s',
+            // padding: '0px'
         };
 
         let n = 5;
@@ -48,19 +47,17 @@ class Square extends Component {
         return (
             <section className='loops' style={styleOne}
                      onClick={this.handleButtonOneClick}
-                     onMouseEnter={this.handleButtonOneOn}
-                     onMouseLeave={this.handleButtonOneOff}>
-                {/*<nav className={show}>*/}
-                    <div className='squareFor'>
-                        Śilnia liczby {n} wynosi {result1} - wykonane pętlą for
-                    </div>
+            >
+                <div className='div1' style={styleTwo} onClick={this.handleButtonOneClick}>1.</div>
+                <div className='squareFor'>
+                    Śilnia liczby {n} wynosi {result1} - wykonane pętlą for
+                </div>
 
-                    <h4> Zapraszam do prześledzenia kodu :) </h4>
+                <h4> Zapraszam do prześledzenia kodu :) </h4>
 
-                    <div className='squareWhile'>
-                        Śilnia liczby {n} wynosi {result2} - wykonane pętlą while
-                    </div>
-                {/*</nav>*/}
+                <div className='squareWhile'>
+                    Śilnia liczby {n} wynosi {result2} - wykonane pętlą while
+                </div>
             </section>
         )
     }
