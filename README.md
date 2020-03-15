@@ -39,6 +39,7 @@ and its content will be displayed.
 function that returns the sum of the numbers passed as an argument to that function.
     - 2 - function, which is the: paper stone and the scissors game.
     - 3 - function that returns the second largest number from an array. (array is an argument)
+    - 4 - function that returns only negative numbers.
 
     
 ## Setup

@@ -305,6 +305,36 @@
   }
 }
 
+.negativeNumber {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  border: groove;
+  border-radius: 60px;
+  margin: 50px auto;
+  padding: 40px;
+
+  .numberOfExercise {
+    font-family: inherit;
+    text-align: center;
+    text-shadow: 12px 2px 20px gray;
+  }
+
+  .negativeNumberBack {
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 3px 2px black;
+    font-variant: small-caps;
+    width: 50%;
+    color: #ffffff;
+    background-color: #868686;
+    border: groove;
+    border-radius: 60px;
+    margin: 10px;
+    padding: 20px 30px 35px 30px;
+  }
+}
 
 
 

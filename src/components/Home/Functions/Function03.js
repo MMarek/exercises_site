@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import '../../../scss/_exercises.scss'
 
-class SecoundMax extends Component {
+class SecondMax extends Component {
 
     state = {
         click: false
@@ -78,4 +78,4 @@ class SecoundMax extends Component {
     }
 }
 
-export default SecoundMax;
+export default SecondMax;
