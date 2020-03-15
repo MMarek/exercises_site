@@ -33,7 +33,9 @@ and its content will be displayed.
     - 5 - array with various numbers, and the arithmetic average of them.
     - 6 - an array with 10 randomly generated numbers using Math.random (). 
     Each odd number converted to an even number one higher.
-    - 7 - 
+    
+- Functions: 
+    - 1 - 
 function that returns the sum of the numbers passed as an argument to that function.
     
     

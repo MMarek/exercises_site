@@ -242,3 +242,27 @@
     padding: 20px 30px 35px 30px;
   }
 }
+
+
+
+
+
+
+
+
+
+//functions
+
+.allFunctions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  height: 100%;
+  border: groove;
+  border-radius: 60px;
+  padding: 40px;
+  margin: 20px;
+}

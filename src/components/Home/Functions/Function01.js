@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import '../../../scss/_functions.scss'
+import '../../../scss/_exercises.scss'
 
 class ArgumentSum extends Component {
 

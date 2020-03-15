@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import '../../../scss/_loops.scss'
+import '../../../scss/_exercises.scss'
 
 class Arithmetic extends Component{
 

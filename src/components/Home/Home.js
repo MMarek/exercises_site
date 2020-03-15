@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import '../../scss/_home.scss'
+import '../../scss/_exercises.scss'
 
 import AllLoops from "./Loops/AllLoops";
 import AllFunctions from "./Functions/AllFunctions";
