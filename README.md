@@ -37,7 +37,8 @@ and its content will be displayed.
 - Functions: 
     - 1 - 
 function that returns the sum of the numbers passed as an argument to that function.
-    
+    - 2 - function, which is the: paper stone and the scissors game.
+
     
 ## Setup
 To clone and run this application, you'll need Git and React installed on your computer:
