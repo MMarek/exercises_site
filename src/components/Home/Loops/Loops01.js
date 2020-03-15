@@ -20,7 +20,7 @@ class Square extends Component {
         let styleOne = {
             width: click ? '100%' : '10%',
             height: click ? '100%' : '10%',
-            fontSize: click ? '15px' : '0%',
+            fontSize: click ? '30px' : '0%',
             transition: '2s',
         };
 

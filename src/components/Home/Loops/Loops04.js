@@ -20,7 +20,7 @@ class Number extends Component {
         let styleOne = {
             width: click ? '100%' : '10%',
             height: click ? '100%' : '10%',
-            fontSize: click ? '15px' : '0%',
+            fontSize: click ? '30px' : '0%',
             transition: '2s',
         };
 
@@ -56,6 +56,7 @@ class Number extends Component {
                 <div className='numberOne'>
                     Losowe liczby z przedziału od 1 do 15 które się powtarzają to: {duplicatedValues},
                     liczby te losowane są przy każdym odświeżeniu strony.
+                    <p>powtarza się {duplicatedValues.length} liczb/y</p>
                 </div>
                 <div className='numberOne'>
                     <p>Oto wzór:</p>
@@ -67,9 +68,6 @@ class Number extends Component {
                 '                }\n' +
                 '            }\n' +
                 '        }'}</div>
-                <div className='numberOne'>
-                    powtarza się {duplicatedValues.length} liczb/y
-                </div>
             </section>
         )
     }

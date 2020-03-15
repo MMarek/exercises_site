@@ -5,6 +5,7 @@ import ArgumentSum from "./Function01";
 import PaperGame from "./Function02";
 import SecondMax from "./Function03";
 import NegativeNumber from "./Function04";
+import AddsTo from "./Function05";
 
 
 class AllFunctions extends Component {
@@ -16,6 +17,7 @@ class AllFunctions extends Component {
                 <PaperGame/>
                 <SecondMax/>
                 <NegativeNumber/>
+                <AddsTo/>
             </section>
         )
     }

@@ -25,7 +25,7 @@ and its content will be displayed.
 - Loops: 
     - 1 - a small program calculating the factorial, made in two different ways.
     - 2 - program that sums all given numbers in the range from x to y.
-    - 3 - alternating `'+' and '-' `program with loop in a loop, and after all iterations the program 
+    - 3 - alternating '+' and '-' program with loop in a loop, and after all iterations the program 
     starts from a new line.
     - 4 - table with random numbers with 15 places inside, from 1 to 10 
     (each refresh of the page gives a new set of numbers).	
@@ -40,7 +40,7 @@ function that returns the sum of the numbers passed as an argument to that funct
     - 2 - function, which is the: paper stone and the scissors game.
     - 3 - function that returns the second largest number from an array. (array is an argument)
     - 4 - function that returns only negative numbers.
-
+    - 5 - function that returns all even numbers from 0 to n, and adds them together.
     
 ## Setup
 To clone and run this application, you'll need Git and React installed on your computer:

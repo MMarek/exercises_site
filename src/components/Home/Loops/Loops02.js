@@ -20,7 +20,7 @@ class SumOfAll extends Component {
         let styleOne = {
             width: click ? '100%' : '10%',
             height: click ? '100%' : '10%',
-            fontSize: click ? '15px' : '0%',
+            fontSize: click ? '30px' : '0%',
             transition: '2s',
         };
 
@@ -36,7 +36,6 @@ class SumOfAll extends Component {
         for (let i = x; i <= y; i = i + 1) {
             sum += i;
         }
-        // console.log(sum);
         return (
             <section className='sum' style={styleOne}
                      onClick={this.handleButtonOneClick}>
@@ -44,10 +43,16 @@ class SumOfAll extends Component {
 
                 <div className='sumOfAll'>
                     Suma wszystkich dodanych do siebie liczb w przedziale od 1 do 100 daje wynik: {sum} :)
-               <p>{'let x = 1; let y = 100; let sum = 0; for (let i = x; i <= y; i = i + 1) { sum += i;}'}</p>
                 </div>
-
-                <span>Dodaj tekst</span>
+                <div className='sumOfAll'>
+                    {' let x = 1;\n' +
+                    '        let y = 100;\n' +
+                    '        let sum = 0;\n' +
+                    '\n' +
+                    '        for (let i = x; i <= y; i = i + 1) {\n' +
+                    '            sum += i;\n' +
+                    '        }'}
+                </div>
             </section>
         )
     }
