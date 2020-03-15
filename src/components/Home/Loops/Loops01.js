@@ -18,10 +18,11 @@ class Square extends Component {
         const {click} = this.state;
 
         let styleOne = {
-            width: click ? '100%' : '10%',
-            height: click ? '100%' : '10%',
+            width: click ? '80%' : '10%',
+            height: click ? '50%' : '10%',
             fontSize: click ? '30px' : '0%',
             transition: '2s',
+            // position: click ? 'absolute' : 'relative'
         };
 
         let styleTwo = {
@@ -52,8 +53,6 @@ class Square extends Component {
                         {'let n = 5; let result1 = 1; for (let i = 1; i <= n; i++) { result1 = result1 * i }'}
                     </p>
                 </div>
-
-                <span> Zapraszam do zapoznania się z kodem :) </span>
 
                 <div className='squareWhile'>
                     Śilnia liczby {n} wynosi {result2} - wykonane pętlą while:
