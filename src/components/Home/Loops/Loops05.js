@@ -18,8 +18,8 @@ class Arithmetic extends Component{
         const {click} = this.state;
 
         let styleOne = {
-            width: click ? '30%' : '10%',
-            height: click ? '45%' : '10%',
+            width: click ? '100%' : '10%',
+            height: click ? '100%' : '10%',
             fontSize: click ? '15px' : '0%',
             transition: '2s',
         };

@@ -18,8 +18,8 @@ class PaperGame extends Component {
         const {click} = this.state;
 
         let styleOne = {
-            width: click ? '30%' : '10%',
-            height: click ? '45%' : '10%',
+            width: click ? '100%' : '10%',
+            height: click ? '100%' : '10%',
             fontSize: click ? '15px' : '0%',
             transition: '2s',
         };
@@ -37,7 +37,7 @@ class PaperGame extends Component {
                 allowedValues.indexOf(player1.toLowerCase()) === -1 ||
                 allowedValues.indexOf(player2.toLowerCase()) === -1
             ) {
-                return "Błędne informacje";
+                return "Remis  ";
             }
             ;
 
@@ -46,18 +46,49 @@ class PaperGame extends Component {
                 (player1.toLowerCase() === "rock" && player2.toLowerCase() === "scissors") ||
                 (player1.toLowerCase() === "scissors" && player2.toLowerCase() === "paper")
             ) {
-                return "Gracz 1 wygrał";
+                return "Gracz 1  ";
             } else if (player1.toLowerCase() === player2.toLowerCase()) {
                 return "Remis";
             } else {
-                return "Gracz 2 wygrał"
+                return "Gracz 2  "
             }
         };
 
-        console.log(paperRockScissors("scissors", "rock"));
-        console.log(paperRockScissors("scissors", "paper"));
-        console.log(paperRockScissors("scissors", "scissors"));
-        console.log(paperRockScissors("halabarda", "kandelabr"));
+        return (
+            <section className='paperGame' style={styleOne}
+                     onClick={this.handleButtonOneClick}>
+                <div className='numberOfExercise' style={styleTwo} onClick={this.handleButtonOneClick}>2.</div>
+                <div className='paperGameAll'>
+                    Papier, kamień, nożyce.. Gracz 1 zawsze ma 'Nożyce', Gracz 2 kolejno :papier, kamień, a następnie nożyce.
+                    Wygrywa: {paperRockScissors('scissors', 'rock')}
+                    Następnie: {paperRockScissors('scissors', 'paper')}
+                    Oraz w trzecim starciu: {paperRockScissors('scissors', 'scisors')}
+                </div>
+                <div className='paperGameAll'>{'       let paperRockScissors = function (player1, player2) {\n' +
+                '\n' +
+                '            const allowedValues = ["paper", "rock", "scissors"];\n' +
+                '            if (\n' +
+                '                allowedValues.indexOf(player1.toLowerCase()) === -1 ||\n' +
+                '                allowedValues.indexOf(player2.toLowerCase()) === -1\n' +
+                '            ) {\n' +
+                '                return "Remis  ";\n' +
+                '            }\n' +
+                '            ;\n' +
+                '\n' +
+                '            if (\n' +
+                '                (player1.toLowerCase() === "paper" && player2.toLowerCase() === "rock") ||\n' +
+                '                (player1.toLowerCase() === "rock" && player2.toLowerCase() === "scissors") ||\n' +
+                '                (player1.toLowerCase() === "scissors" && player2.toLowerCase() === "paper")\n' +
+                '            ) {\n' +
+                '                return "Gracz 1  ";\n' +
+                '            } else if (player1.toLowerCase() === player2.toLowerCase()) {\n' +
+                '                return "Remis";\n' +
+                '            } else {\n' +
+                '                return "Gracz 2  "\n' +
+                '            }\n' +
+                '        };'}</div>
+            </section>
+        )
     }
 }
 
