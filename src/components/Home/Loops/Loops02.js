@@ -18,7 +18,7 @@ class SumOfAll extends Component {
         const {click} = this.state;
 
         let styleOne = {
-            width: click ? '50%' : '10%',
+            width: click ? '30%' : '10%',
             height: click ? '45%' : '10%',
             fontSize: click ? '15px' : '0%',
             transition: '2s',

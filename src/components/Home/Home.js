@@ -5,6 +5,7 @@ import Stars from './Loops/Loops03';
 import Number from './Loops/Loops04';
 import Arithmetic from './Loops/Loops05';
 import EvenNumber from './Loops/Loops06';
+import ArgumentSum from './Loops/Loops07'
 
 class Home extends Component {
 
@@ -17,6 +18,7 @@ class Home extends Component {
               <Number/>
               <Arithmetic/>
               <EvenNumber/>
+              <ArgumentSum/>
             </section>
         )
     }
