@@ -6,6 +6,7 @@ import PaperGame from "./Function02";
 import SecondMax from "./Function03";
 import NegativeNumber from "./Function04";
 import AddsTo from "./Function05";
+import TheBest from "./Function06";
 
 
 class AllFunctions extends Component {
@@ -18,6 +19,7 @@ class AllFunctions extends Component {
                 <SecondMax/>
                 <NegativeNumber/>
                 <AddsTo/>
+                <TheBest/>
             </section>
         )
     }

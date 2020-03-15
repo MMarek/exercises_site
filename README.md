@@ -41,7 +41,7 @@ function that returns the sum of the numbers passed as an argument to that funct
     - 3 - function that returns the second largest number from an array. (array is an argument)
     - 4 - function that returns only negative numbers.
     - 5 - function that returns all even numbers from 0 to n, and adds them together.
-    
+    - 6 - function entering 10x content: 'JS is The Best'
 ## Setup
 To clone and run this application, you'll need Git and React installed on your computer:
 ```
