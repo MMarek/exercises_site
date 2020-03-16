@@ -30,51 +30,48 @@ class TestX extends Component {
         };
 
 
-        const parentList = document.querySelectorAll('.parent');
-        for (let i = 0; i < parentList.length; i++) {
-            parentList[i].addEventListener('mouseenter', function () {
-                console.log('enter', this);
+        document.addEventListener('DOMContentLoaded', function () {
 
-                const child = this.querySelector('.children');
-                child.style.display = 'block';
+            const buttons = document.querySelectorAll('button');
+            const span = document.querySelectorAll('span');
+
+            buttons[0].addEventListener('mouseenter', function () {
+                span[0].innerText++
             });
 
-            parentList[i].addEventListener('mouseleave', function () {
-                const child = this.querySelector('.children');
-                child.style.display = 'none';
-            })
-        }
+            buttons[1].addEventListener('mouseenter', function () {
+                span[1].innerText++
+            });
+
+            buttons[2].addEventListener('mouseenter', function () {
+                span[2].innerText++
+            });
+        });
 
 
         return (
             <>
 
-                <section className="task01">
-
-                    <div className="parent"> 1
-                        <div className="children">2
-                        </div>
-                    </div>
-
-                    <div className="parent">3
-                        <div className="children">4
-                        </div>
-                    </div>
-
-                    <div className="parent">5
-                        <div className="children">6
-                        </div>
-                    </div>
-                </section>
-
-
-                <section className='' style={styleOne} onClick={this.handleButtonOneClick}>
+                <section className='container' style={styleOne} onClick={this.handleButtonOneClick}>
 
                     <div className='numberOfExercise' style={styleTwo} onClick={this.handleButtonOneClick}>X.</div>
 
-                    <div className='firstDiv'>
+                    <div className='firstDiv'>Najeżdżając kursorem myszki na jeden z guzików, zwiększasz wartość licznika.
                     </div>
                     <div className='firstDiv'>
+
+                        <button>Guzik 1</button>
+                        <p>
+                            Wartość licznika 1: <span>0</span>
+                        </p>
+                        <button>Guzik 2</button>
+                        <p>
+                            Wartość licznika 2: <span>0</span>
+                        </p>
+                        <button>Guzik 3</button>
+                        <p>
+                            Wartość licznika 3: <span>0</span>
+                        </p>
 
                     </div>
 
@@ -85,3 +82,5 @@ class TestX extends Component {
 }
 
 export default TestX;
+
+
