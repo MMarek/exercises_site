@@ -3,7 +3,7 @@ import '../../scss/_exercises.scss';
 
 import AllLoops from "./Loops/AllLoops";
 import AllFunctions from "./Functions/AllFunctions";
-import Test from './new/test'
+import AllEvents from './new/AllEvents'
 
 class Home extends Component {
 
@@ -13,7 +13,7 @@ class Home extends Component {
                 <AllLoops/>
                 <AllFunctions/>
 
-                <Test/>
+                <AllEvents/>
 
             </section>
         )

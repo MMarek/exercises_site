@@ -7,7 +7,7 @@ import Stars from "./Loops03";
 import Number from "./Loops04";
 import Arithmetic from "./Loops05";
 import EvenNumber from "./Loops06";
-// import Test from "../new/test"
+// import AllEvents from "../new/test"
 
 // import ArgumentSum from './Loops/Loops07'
 
@@ -24,7 +24,7 @@ class AllLoops extends Component {
                 <Arithmetic/>
                 <EvenNumber/>
                 {/*<ArgumentSum/>*/}
-                {/*<Test/>*/}
+                {/*<AllEvents/>*/}
             </section>
         )
     }

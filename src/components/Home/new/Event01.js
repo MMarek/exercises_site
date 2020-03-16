@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import '../../../scss/_exercises.scss'
 
-class Test01 extends Component {
+class Buttons extends Component {
 
     state = {
         click: false
@@ -85,6 +85,4 @@ class Test01 extends Component {
     }
 }
 
-export default Test01;
-
-
+export default Buttons;

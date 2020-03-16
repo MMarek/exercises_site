@@ -41,6 +41,14 @@ and its content will be displayed.
     - 4 - function that returns only negative numbers.
     - 5 - function that returns all even numbers from 0 to n, and adds them together.
     - 6 - function entering 10x content: 'JS is The Best'
+
+- Events
+    - 1 - Buttons with connected events, 'mouseenter' gives the counting of the next number on the counter.
+    - 2 - Button, with an connected event, also with 'mouseenter' - it shows "It's Working!" in the console.
+   
+    
+    
+    
 ## Setup
 To clone and run this application, you'll need Git and React installed on your computer:
 ```
