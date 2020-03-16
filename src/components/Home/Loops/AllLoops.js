@@ -7,7 +7,7 @@ import Stars from "./Loops03";
 import Number from "./Loops04";
 import Arithmetic from "./Loops05";
 import EvenNumber from "./Loops06";
-// import AllEvents from "../new/test"
+// import AllEvents from "../Events/test"
 
 // import ArgumentSum from './Loops/Loops07'
 

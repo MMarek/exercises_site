@@ -45,7 +45,8 @@ and its content will be displayed.
 - Events
     - 1 - Buttons with connected events, 'mouseenter' gives the counting of the next number on the counter.
     - 2 - Button, with an connected event, also with 'mouseenter' - it shows "It's Working!" in the console.
-   
+    - 3 - Buttons with connected events, just like in the first quest, with little difference.
+
     
     
     
