@@ -114,7 +114,8 @@
 import React, {Component} from "react";
 import '../../../scss/_exercises.scss';
 
-import TestX from "./test01";
+import Test01 from "./test01";
+import Test02 from "./test02";
 
 
 class Test extends Component {
@@ -122,7 +123,8 @@ class Test extends Component {
     render() {
         return (
             <section className='main'>
-                <TestX/>
+                <Test01/>
+                <Test02/>
 
             </section>
         )
