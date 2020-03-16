@@ -16,6 +16,7 @@ class AllLoops extends Component {
     render() {
         return (
             <section className='main'>
+                <div>Loops, Arrays, Functions</div>
                 <Square/>
                 <SumOfAll/>
                 <Stars/>

@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import '../../../scss/_exercises.scss'
 
-class EvenNumber01 extends Component {
+class TestX extends Component {
 
     state = {
         click: false
@@ -30,46 +30,58 @@ class EvenNumber01 extends Component {
         };
 
 
-        let randomNumbers = [];
+        const parentList = document.querySelectorAll('.parent');
+        for (let i = 0; i < parentList.length; i++) {
+            parentList[i].addEventListener('mouseenter', function () {
+                console.log('enter', this);
 
-        for (let i = 0; i < 10; i++) {
-            let random = Math.floor(Math.random() * 29 + 1);
-            randomNumbers.push(random)
+                const child = this.querySelector('.children');
+                child.style.display = 'block';
+            });
+
+            parentList[i].addEventListener('mouseleave', function () {
+                const child = this.querySelector('.children');
+                child.style.display = 'none';
+            })
         }
 
-        for (let i = 0; i < randomNumbers.length; i++) {
-            if (randomNumbers[i] % 2 !== 0) {
-                randomNumbers[i] +=1;
-            }
-        }
 
         return (
-            <section className='evenNumber' style={styleOne}
-                     onClick={this.handleButtonOneClick}>
-                <div className='numberOfExercise' style={styleTwo} onClick={this.handleButtonOneClick}>6.</div>
+            <>
 
-                <div className='evenNumberDiv'>
-                    Losowe liczby z zakresu od 1 do 10, wygenerowane przy pomocy `Math.random()`,
-                    a każda nieparzysta w niej, zamieniona zostaje w parzystą o wartość do góry.
-                    <p>Oto one: {randomNumbers}</p>
-                </div>
-                <div className='evenNumberDiv'>
-                    {'let randomNumbers = [];\n' +
-                    '\n' +
-                    '        for (let i = 0; i < 10; i++) {\n' +
-                    '            let random = Math.floor(Math.random() * 29 + 1);\n' +
-                    '            randomNumbers.push(random)\n' +
-                    '        }\n' +
-                    '\n' +
-                    '        for (let i = 0; i < randomNumbers.length; i++) {\n' +
-                    '            if (randomNumbers[i] % 2 !== 0) {\n' +
-                    '                randomNumbers[i] +=1;\n' +
-                    '            }\n' +
-                    '        }'}
-                </div>
-            </section>
+                <section className="task01">
+
+                    <div className="parent"> 1
+                        <div className="children">2
+                        </div>
+                    </div>
+
+                    <div className="parent">3
+                        <div className="children">4
+                        </div>
+                    </div>
+
+                    <div className="parent">5
+                        <div className="children">6
+                        </div>
+                    </div>
+                </section>
+
+
+                <section className='' style={styleOne} onClick={this.handleButtonOneClick}>
+
+                    <div className='numberOfExercise' style={styleTwo} onClick={this.handleButtonOneClick}>X.</div>
+
+                    <div className='firstDiv'>
+                    </div>
+                    <div className='firstDiv'>
+
+                    </div>
+
+                </section>
+            </>
         )
     }
 }
 
-export default EvenNumber01;
+export default TestX;

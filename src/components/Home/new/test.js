@@ -114,15 +114,15 @@
 import React, {Component} from "react";
 import '../../../scss/_exercises.scss';
 
-import EvenNumber01 from "./test01";
+import TestX from "./test01";
 
 
 class Test extends Component {
 
     render() {
         return (
-            <section className='test'>
-                <EvenNumber01/>
+            <section className='main'>
+                <TestX/>
 
             </section>
         )

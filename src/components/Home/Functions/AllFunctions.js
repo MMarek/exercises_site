@@ -14,6 +14,7 @@ class AllFunctions extends Component {
     render() {
         return (
             <section className='main'>
+                <div>Functions</div>
                 <ArgumentSum/>
                 <PaperGame/>
                 <SecondMax/>
