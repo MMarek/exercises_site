@@ -29,6 +29,13 @@ class TestX extends Component {
             transition: '5s',
         };
 
+        let styleThree = {
+            width: click ? '30%' : '0%',
+            height: click ? '100%' : '10%',
+            fontSize: click ? '40px' : '0%',
+            transition: '2s',
+        };
+
 
         document.addEventListener('DOMContentLoaded', function () {
 
@@ -50,33 +57,30 @@ class TestX extends Component {
 
 
         return (
-            <>
 
                 <section className='container' style={styleOne} onClick={this.handleButtonOneClick}>
 
-                    <div className='numberOfExercise' style={styleTwo} onClick={this.handleButtonOneClick}>X.</div>
+                    <div className='numberOfExercise' style={styleTwo} onClick={this.handleButtonOneClick}>1.</div>
 
                     <div className='firstDiv'>Najeżdżając kursorem myszki na jeden z guzików, zwiększasz wartość licznika.
                     </div>
                     <div className='firstDiv'>
 
-                        <button>Guzik 1</button>
+                        <button style={styleThree}>Guzik 1</button>
                         <p>
                             Wartość licznika 1: <span>0</span>
                         </p>
-                        <button>Guzik 2</button>
+                        <button style={styleThree}>Guzik 2</button>
                         <p>
                             Wartość licznika 2: <span>0</span>
                         </p>
-                        <button>Guzik 3</button>
+                        <button style={styleThree}>Guzik 3</button>
                         <p>
                             Wartość licznika 3: <span>0</span>
                         </p>
 
                     </div>
-
                 </section>
-            </>
         )
     }
 }
