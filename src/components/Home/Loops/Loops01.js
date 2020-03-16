@@ -43,18 +43,18 @@ class Square extends Component {
             j++;
         }
         return (
-            <section className='loops' style={styleOne}
+            <section className='container' style={styleOne}
                      onClick={this.handleButtonOneClick}
             >
                 <div className='numberOfExercise' style={styleTwo} onClick={this.handleButtonOneClick}>1.</div>
-                <div className='squareFor'>
+                <div className='firstDiv'>
                     Śilnia liczby {n} wynosi {result1} - wykonane pętlą for:
                     <p>
                         {'let n = 5; let result1 = 1; for (let i = 1; i <= n; i++) { result1 = result1 * i }'}
                     </p>
                 </div>
 
-                <div className='squareWhile'>
+                <div className='firstDiv'>
                     Śilnia liczby {n} wynosi {result2} - wykonane pętlą while:
                     <p>
                         {'let result2 = 1; let j = 1; while (j <= n) { result2 *= j; j++; }'}

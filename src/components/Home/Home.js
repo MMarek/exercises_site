@@ -1,8 +1,9 @@
 import React, {Component} from "react";
-import '../../scss/_exercises.scss'
+import '../../scss/_exercises.scss';
 
 import AllLoops from "./Loops/AllLoops";
 import AllFunctions from "./Functions/AllFunctions";
+import Test from './new/test'
 
 class Home extends Component {
 
@@ -11,6 +12,8 @@ class Home extends Component {
             <section className='home'>
                 <AllLoops/>
                 <AllFunctions/>
+
+                <Test/>
 
             </section>
         )

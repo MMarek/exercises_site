@@ -48,15 +48,15 @@ class SecondMax extends Component {
         // console.log(getSecoundMaxNumber(newArray))
 
         return (
-            <section className='secoundMax' style={styleOne}
+            <section className='container' style={styleOne}
             onClick={this.handleButtonOneClick}>
 
                 <div className='numberOfExercise' style={styleTwo} onClick={this.handleButtonOneClick}>3.</div>
 
-                <div className='secoundMaxNumber'>
+                <div className='firstDiv'>
                     Druga największa liczba z następującej tablicy [3,7,42,277,4,51,9,8,7,66,53,278] to: {getSecoundMaxNumber(newArray)}
                 </div>
-                <div className='secoundMaxNumber'>{'function getSecoundMaxNumber(arrayNumbers) {\n' +
+                <div className='firstDiv'>{'function getSecoundMaxNumber(arrayNumbers) {\n' +
                 '    let firstMaxNumber = 0;\n' +
                 '    let secoundMaxNumber = 0;\n' +
                 '\n' +

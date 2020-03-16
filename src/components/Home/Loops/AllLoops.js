@@ -7,7 +7,7 @@ import Stars from "./Loops03";
 import Number from "./Loops04";
 import Arithmetic from "./Loops05";
 import EvenNumber from "./Loops06";
-import Test from "../new/test"
+// import Test from "../new/test"
 
 // import ArgumentSum from './Loops/Loops07'
 
@@ -15,7 +15,7 @@ class AllLoops extends Component {
 
     render() {
         return (
-            <section className='allLoops'>
+            <section className='main'>
                 <Square/>
                 <SumOfAll/>
                 <Stars/>
@@ -23,7 +23,7 @@ class AllLoops extends Component {
                 <Arithmetic/>
                 <EvenNumber/>
                 {/*<ArgumentSum/>*/}
-                <Test/>
+                {/*<Test/>*/}
             </section>
         )
     }

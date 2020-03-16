@@ -38,15 +38,15 @@ class TheBest extends Component {
         theBestIsJS(10);
 
         return (
-            <section className='theBest' style={styleOne}
+            <section className='container' style={styleOne}
                      onClick={this.handleButtonOneClick}>
 
                 <div className='numberOfExercise' style={styleTwo} onClick={this.handleButtonOneClick}>6.</div>
 
-                <div className='theBestJs'>
+                <div className='firstDiv'>
                     Funkcja zwracająca n iloć razy w konsoli napis 'JS is The Best'
                 </div>
-                <div className='theBestJs'>
+                <div className='firstDiv'>
                     {'let theBestIsJS = function (n) {\n' +
                     '            for (let i = 0; i <n ; i++) {\n' +
                     '                console.log(\'JS is The Best\');\n' +

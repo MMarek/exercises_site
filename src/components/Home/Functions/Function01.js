@@ -42,11 +42,11 @@ class ArgumentSum extends Component {
         // console.log(sum2);
 
         return (
-            <section className='argumentSum' style={styleOne}
+            <section className='container' style={styleOne}
                      onClick={this.handleButtonOneClick}>
                 <div className='numberOfExercise' style={styleTwo} onClick={this.handleButtonOneClick}>1.</div>
 
-                <div className='argumentSumAll'>
+                <div className='firstDiv'>
                     {' let sumArr = function (numbersArray) {\n' +
                     '            let sum = 0;\n' +
                     '            for (let i = 0; i < numbersArray.length ; i++) {\n' +
@@ -58,7 +58,7 @@ class ArgumentSum extends Component {
                     '        let arr1 = [1,2,3,4,5,6,7,8,9];\n' +
                     '        let sum2 = sumArr(arr1);'}
                 </div>
-                <div className='argumentSumAll'>
+                <div className='firstDiv'>
                     Suma wszystkich podanych liczb, jako argument, wynosi {sum2}
                 </div>
 

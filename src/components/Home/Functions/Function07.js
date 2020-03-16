@@ -58,12 +58,12 @@ class DaysInn extends Component {
         let value7 = calcValues(70);
 
         return (
-            <section className='daysInn' style={styleOne}
+            <section className='container' style={styleOne}
                      onClick={this.handleButtonOneClick}>
 
                 <div className='numberOfExercise' style={styleTwo} onClick={this.handleButtonOneClick}>7.</div>
 
-                <div className='daysInnHotel'>
+                <div className='firstDiv'>
                     Wartość kolejnych dni spędzonych w hotelu, względem narzuconego cennika wynosi:
                     Dzień pierwszy: {value },
                     Dzień drugi: {value2 },
@@ -73,7 +73,7 @@ class DaysInn extends Component {
                     Dzień szusty: {value6 },
                     Dzień siódmy: {value7 },
                 </div>
-                <div className='daysInnHotel'>{'    let calcValues = function (argument) {\n' +
+                <div className='firstDiv'>{'    let calcValues = function (argument) {\n' +
                 '            let singleValue;\n' +
                 '            if (argument === 1) {\n' +
                 '                singleValue = 200;\n' +

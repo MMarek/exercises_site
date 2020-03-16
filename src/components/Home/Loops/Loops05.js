@@ -38,13 +38,13 @@ class Arithmetic extends Component{
         let avg = sum1 / numbers.length;
 
         return (
-            <section className='arithmetic' style={styleOne}
+            <section className='container' style={styleOne}
             onClick={this.handleButtonOneClick}>
                 <div className='numberOfExercise' style={styleTwo} onClick={this.handleButtonOneClick}>5.</div>
-                <div className='arithmeticAverage'>
+                <div className='firstDiv'>
                     Suma liczb: [2,5,17,53,89,146,271,330,751] podzielona przez ich ilość daje średnią arytmetyczną: {avg}
                 </div>
-                <div className='arithmeticAverage'>
+                <div className='firstDiv'>
                     {'const numbers = [2,5,17,53,89,146,271,330,751];\n' +
                     '\n' +
                     '        let sum1 = 0;\n' +

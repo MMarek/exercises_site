@@ -13,7 +13,7 @@ class AllFunctions extends Component {
 
     render() {
         return (
-            <section className='allFunctions'>
+            <section className='main'>
                 <ArgumentSum/>
                 <PaperGame/>
                 <SecondMax/>

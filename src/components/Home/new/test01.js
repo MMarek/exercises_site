@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import '../../../scss/_exercises.scss'
 
-class EvenNumber extends Component {
+class EvenNumber01 extends Component {
 
     state = {
         click: false
@@ -44,16 +44,16 @@ class EvenNumber extends Component {
         }
 
         return (
-            <section className='container' style={styleOne}
-            onClick={this.handleButtonOneClick}>
+            <section className='evenNumber' style={styleOne}
+                     onClick={this.handleButtonOneClick}>
                 <div className='numberOfExercise' style={styleTwo} onClick={this.handleButtonOneClick}>6.</div>
 
-                <div className='firstDiv'>
-                   Losowe liczby z zakresu od 1 do 10, wygenerowane przy pomocy `Math.random()`,
+                <div className='evenNumberDiv'>
+                    Losowe liczby z zakresu od 1 do 10, wygenerowane przy pomocy `Math.random()`,
                     a każda nieparzysta w niej, zamieniona zostaje w parzystą o wartość do góry.
                     <p>Oto one: {randomNumbers}</p>
                 </div>
-                <div className='firstDiv'>
+                <div className='evenNumberDiv'>
                     {'let randomNumbers = [];\n' +
                     '\n' +
                     '        for (let i = 0; i < 10; i++) {\n' +
@@ -72,4 +72,4 @@ class EvenNumber extends Component {
     }
 }
 
-export default EvenNumber;
+export default EvenNumber01;

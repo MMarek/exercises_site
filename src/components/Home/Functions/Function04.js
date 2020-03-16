@@ -43,15 +43,15 @@ class NegativeNumber extends Component {
         let randomArray = [4, -7, 86, 9, -43, 23, -14, -99, 3];
 
         return (
-            <section className='negativeNumber' style={styleOne}
+            <section className='container' style={styleOne}
                      onClick={this.handleButtonOneClick}>
 
                 <div className='numberOfExercise' style={styleTwo} onClick={this.handleButtonOneClick}>4.</div>
 
-                <div className='negativeNumberBack'>
+                <div className='firstDiv'>
                     Wszystkie liczby ujemne z przykładowej tablicy [4, -7, 86, 9, -43, 23, -14, -99, 3] to: {getNegativeNumbers(randomArray)}
                 </div>
-                <div className='negativeNumberBack'>{'let negativeNumbers = [];\n' +
+                <div className='firstDiv'>{'let negativeNumbers = [];\n' +
                 'function getNegativeNumbers(array) {\n' +
                 '    for (let i = 0; i < array.length; i++) {\n' +
                 '        if (array[i] < 0) {\n' +

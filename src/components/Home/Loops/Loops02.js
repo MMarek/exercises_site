@@ -37,14 +37,14 @@ class SumOfAll extends Component {
             sum += i;
         }
         return (
-            <section className='sum' style={styleOne}
+            <section className='container' style={styleOne}
                      onClick={this.handleButtonOneClick}>
                 <div className='numberOfExercise' style={styleTwo} onClick={this.handleButtonOneClick}>2.</div>
 
-                <div className='sumOfAll'>
+                <div className='firstDiv'>
                     Suma wszystkich dodanych do siebie liczb w przedziale od 1 do 100 daje wynik: {sum} :)
                 </div>
-                <div className='sumOfAll'>
+                <div className='firstDiv'>
                     {' let x = 1;\n' +
                     '        let y = 100;\n' +
                     '        let sum = 0;\n' +

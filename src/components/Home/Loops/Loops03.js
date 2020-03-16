@@ -42,14 +42,14 @@ class Stars extends Component {
             }
         }
         return (
-            <section className='stars' style={styleOne}
+            <section className='container' style={styleOne}
             onClick={this.handleButtonOneClick}>
                 <div className='numberOfExercise' style={styleTwo} onClick={this.handleButtonOneClick}>3.</div>
-                <div className='allStars'>
+                <div className='firstDiv'>
                     <h4>Program zamieszczający naprzemiennie '+' oraz '-', posiadający pętle w pętli:</h4>
                     {textResult}
                 </div>
-                <div className='allStars'>{'let textResult = "";\n' +
+                <div className='firstDiv'>{'let textResult = "";\n' +
                 '        for (let i = 0; i < k; i++) {\n' +
                 '            for (let j = 0; j < k; j++) {\n' +
                 '                if ((i + j) % 2 === 0) {\n' +

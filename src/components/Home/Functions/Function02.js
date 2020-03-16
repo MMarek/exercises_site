@@ -55,16 +55,16 @@ class PaperGame extends Component {
         };
 
         return (
-            <section className='paperGame' style={styleOne}
+            <section className='container' style={styleOne}
                      onClick={this.handleButtonOneClick}>
                 <div className='numberOfExercise' style={styleTwo} onClick={this.handleButtonOneClick}>2.</div>
-                <div className='paperGameAll'>
+                <div className='firstDiv'>
                     Papier, kamień, nożyce.. Gracz 1 zawsze ma 'Nożyce', Gracz 2 kolejno :papier, kamień, a następnie nożyce.
                     Wygrywa: {paperRockScissors('scissors', 'rock')}
                     Następnie: {paperRockScissors('scissors', 'paper')}
                     Oraz w trzecim starciu: {paperRockScissors('scissors', 'scisors')}
                 </div>
-                <div className='paperGameAll'>{'       let paperRockScissors = function (player1, player2) {\n' +
+                <div className='firstDiv'>{'       let paperRockScissors = function (player1, player2) {\n' +
                 '\n' +
                 '            const allowedValues = ["paper", "rock", "scissors"];\n' +
                 '            if (\n' +
